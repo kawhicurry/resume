@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: 简历
+title: KawhiCurry's Resume
 email:
   url: mailto:1145315261@qq.com
   text: 1145315261@qq.com
@@ -17,9 +17,9 @@ homepage:
 
 姓名：于思远
 
-邮箱：1145315261@qq.com
+邮箱：[1145315261@qq.com](mailto:1145315261@qq.com)
 
-个人博客：kawhicurry.github.io
+个人博客：[kawhicurry.github.io](https://kawhicurry.github.io)
 
 Github 地址：[https://github.com/kawhicurry](https://github.com/kawhicurry)
 
