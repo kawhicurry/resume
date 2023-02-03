@@ -50,8 +50,9 @@ Github 地址：[https://github.com/kawhicurry](https://github.com/kawhicurry)
 及相关项目进行二次开发，期望仿真足球队在比赛中取得更好成绩。个人主要工
 作成果为将团队十年未变的底层库升级为最新版本，并独立开发了部分相关工具。
 
-- AplloTrainer
-- [南京邮电大学 Apollo 俱乐部 2023 年校队选拔题目](https://github.com/Apollo2d/NJUPT2023Apollo2D)
+- [南京邮电大学 Apollo 俱乐部 2023 年校队选拔题目](https://github.com/Apollo2d/NJUPT-2022-apollo2d)
+- [Apollo2D 自动比赛脚本](https://github.com/Apollo2d/AutoGame)
+- [Apollo2D 比赛环境自动安装脚本](https://github.com/Apollo2d/Apollo_env_install)
 
 ## 项目经历
 
@@ -89,7 +90,7 @@ Github 地址：[https://github.com/kawhicurry](https://github.com/kawhicurry)
     等多个功能。
   - 所有核心组件均开启 HPA。
 - 基于 rook 的 ceph 集群，该集群为 k8s 提供了多套 CSI 接口。也为 mimir、
-  loki、tempo、gitlab 等业务提供基于 s3 接口的持久化存储
+  loki、tempo、gitlab 等业务提供基于 s3 接口的持久化存储。
 - 基于 mysql-operator 的 innodb cluster。为 mysql 集群设置了基于 s3 的
   定时全量备份。
 - 基于 redis-operator 的哨兵模式 redisfailover 集群。
