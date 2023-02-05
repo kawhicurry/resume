@@ -46,8 +46,7 @@ homepage:
 新版本小程序后端为基于 spring 的**多模块**项目。作为 linux 运维，我为该项目做了
 以下工作。
 
-- 基于 kubeadm+ansible（自行编写的 playbook）搭建了一套 kubernetes 集
-  群。
+- 基于 kubeadm+ansible（自行编写的 playbook）搭建了一套 kubernetes 集群。
 - 基于 gitlab runner 设计的一套动态流水线。该流水线拥有动态检测、自动回滚、并行打包、多层缓存等功能。
 - 基于 kube-prometheus-stack+grafana-stack 的监控、日志与链路追踪平台。
 - 基于 rook 的 ceph 集群。
@@ -86,8 +85,7 @@ bash(5.0+) > C > Go > C++ > Python3
 个人以 Arch Linux 作为日常使用操作系统。相关技能如下：
 
 - 拥有个人维护的 [AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。
-- 熟悉 systemd 相关生态，能熟练编写 systemd.service,systemd.path 等
-  一系列配置文件。
+- 熟悉 systemd 相关生态，能熟练编写 systemd.service,systemd.path 等一系列配置文件。
 - 了解 btrfs ,使用 btrfs 管理本地与服务器磁盘。
 - 了解 kernel 的编译与 linux 的启动过程。了解 grub2 与 uefi。
 - 了解 linux 编程技术，读过 APUE 的一部分。
@@ -99,7 +97,7 @@ bash(5.0+) > C > Go > C++ > Python3
 拥有基础的计算机网络知识体系，但在以下方面略有深入：
 
 - BGP 路由协议
-- ARRP 路由协议
+- VRRP 协议
 - gRPC 协议
 - HTTP 协议
 
@@ -116,6 +114,6 @@ bash(5.0+) > C > Go > C++ > Python3
 - 有现代运维技术的基本观念，读过 Google SRE 相关书籍
 - 有标准化意识，读过部分标准如 FHS、LSB
 - 有充足的危机意识与责任感
-- 有独立思考能力的能力
+- 有独立思考的能力
 
 ---

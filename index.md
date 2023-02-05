@@ -96,8 +96,7 @@ homepage:
 
 ### 其他运维工作
 
-在完全迁移到 k8s 之前，许多业务仍然直接部署在 linux 机器上，以下是有关
-此类业务的一些工作。
+在完全迁移到 k8s 之前，许多业务仍然直接部署在 linux 机器上，以下是有关此类业务的一些工作。
 
 - 基于 CA 的 ssh 认证，保证开发在一定时间内拥有对服务器的登陆权限。
 - 基于 grafana-agent 的监控、日志、链路追踪功能。
@@ -120,8 +119,7 @@ bash(5.0+) > C > Go > C++ > Python3
 
 - 了解各类包管理工具，包括但不限于 apt、yum、pacman。拥有个人维
   护的 [AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。
-- 熟悉 systemd 相关生态，能熟练编写 systemd.service,systemd.path 等
-  一系列配置文件。
+- 熟悉 systemd 相关生态，能熟练编写 systemd.service,systemd.path 等一系列配置文件。
 - 了解 btrfs ,使用 btrfs 管理本地与服务器磁盘。
 - 了解 kernel 的编译与 linux 的启动过程。了解 grub2 与 uefi。
 - 了解 linux 编程技术，读过 APUE 的一部分。
@@ -134,7 +132,7 @@ bash(5.0+) > C > Go > C++ > Python3
 拥有基础的计算机网络知识体系，但在以下方面略有深入：
 
 - BGP 路由协议
-- ARRP 路由协议
+- VRRP 路由协议
 - gRPC 协议
 - HTTP 协议
 
@@ -151,8 +149,8 @@ bash(5.0+) > C > Go > C++ > Python3
 - 有现代运维技术的基本观念，读过 The Site Reliability Workbook, Site
   Reliability Enginerring ,Time managerment of System Administrator
 - 有标准化意识，读过部分标准如 FHS、LSB
-- 有独立思考能力的能力
 - 有充足的危机意识与责任感
+- 有独立思考的能力
 - 有强大的学习能力
 
 ---
