@@ -9,25 +9,17 @@ homepage:
   text: kawhicurry.github.io
 ---
 
-# 简历
+# KawhiCurry
 
 {% include cv-contact.html %}
 
 ## 个人情况
 
-姓名：于思远
-
-邮箱：[1145315261@qq.com](mailto:1145315261@qq.com)
-
-个人博客：[kawhicurry.github.io](https://kawhicurry.github.io)
-
-Github 地址：[https://github.com/kawhicurry](https://github.com/kawhicurry)
-
-完整简历地址： [https://kawhicurry.github.io/resume](https://kawhicurry.github.io/resume)
+{% include cv-person.html %}
 
 ## 教育经历
 
-**南京邮电大学,本科在读**; 自动化系 `2020-2024`
+{% include cv-education.html %}
 
 ## 工作经验
 
@@ -96,11 +88,10 @@ Github 地址：[https://github.com/kawhicurry](https://github.com/kawhicurry)
 - 基于 mysql-operator 的 innodb cluster。为 mysql 集群设置了基于 s3 的
   定时全量备份。
 - 基于 redis-operator 的哨兵模式 redisfailover 集群。
-- 基于 traefik 的七层负载均衡（少部分业务使用 cilium 的 envoy 作为七层
-  负载）。
+- 基于 traefik 和 cilium envoy 的 ingress controller。
 - 完整的 helm chart 模板。在提供基础的 depolyment、cronjob 与 service 等
   资源的同时，将 jvm 启动参数、模块 resource request 等参数的配置权通过
-  value.yaml 交还给开发。
+  value.yaml 交还给开发。还提供来基于AES算法的配置文件密钥部分加密。
 
 ### [南邮镜像站](https://mirrors.njupt.edu.cn)
 
