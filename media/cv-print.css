@@ -156,10 +156,10 @@ em {
 h1 {
   font-family: "Avenir Next", sans-serif;
   text-align: center;
-  font-size: 30pt;
+  font-size: 20pt;
   font-weight: lighter;
   position: relative;
-  line-height: 1.2em;
+  line-height: 1.0em;
   position: relative;
   /* left: 28%; */
 }
@@ -172,29 +172,29 @@ h1 strong {
 /* Section headers */
 h2 {
   font-family: "Avenir Next", sans-serif;
-  font-size: 20pt;
+  font-size: 15pt;
   text-align: center;
   font-weight: normal;
   display: flex;
   /* line-height: 1.5em; */
-  margin-top: 0.7em;
-  margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
   width: 100%;
 }
 h2:after {
   border-bottom: 1.7px dashed #d3d3d3;
   /* height: 0.8em; */
-  margin-left: 10px;
+  margin-left: 1px;
   content: "";
   flex: 1;
 }
 
 h3 strong {
-  /* line-height: 2.5em; */
+  line-height: 0.5em;
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 0.3px;
 }
 
 code {
@@ -242,7 +242,8 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(20, 116, 151);
+  /* color: rgb(20, 116, 151); */
+  color: rgb(0, 0, 0);
 }
 
 @media print {
