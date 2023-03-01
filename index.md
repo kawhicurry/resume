@@ -29,39 +29,40 @@ homepage:
 
 ## 项目经历
 
-### 基础设施维护
+### **基础设施建设**
 
-- 基于 kubeadm+ansible（自行编写的 playbook）搭建了一套 kubernetes 集群。
-  - 使用 containerd 实现 CRI。
-  - 使用 rook-ceph 实现 CSI。
-  - 使用 cilium 实现 CNI。(strict no kube-proxy)
-  - 使用 traefik 和 cilium envoy 作为 ingress controller。
-- 基于 kube-prometheus-stack 和 grafana-stack 的监控、日志、链路追踪平台。
-- 基于 mysql-operator 的 innodb cluster。为 mysql 集群设置了基于 s3 的定时全量备份。
-- 基于 redis-operator 的 sentinel-redis cluster。
+- 搭建了基于 kubeadm + ansible 搭建了一套高可用的 kubernetes 集群，以此作为新业务运行的基础设施。选用了 containerd、rook-ceph、cilium、traefik等实现了集群中的相关组件。
+- 搭建了基于 kube-prometheus-stack 和 grafana-stack 的监控、日志、链路追踪平台，大大提高了对基础设施与业务的可观测性。
+- 搭建了基于 mysql-operator 的 innodb cluster，实现了 mysql 数据的高读写与高可用。
+- 搭建了基于 redis-operator 的 sentinel-redis cluster，实现了 redis 集群的高可用。
 
-### DevOps 相关工作
+### **DevOps 实践**
 
-- 基于 gitlab runner + kaniko 为多模块项目设计了一套动态流水线。
-- 基于 ansible 的 nginx、sshd 与 grafana-agent 配置分发中心。
-- 通用的 helm chart 部署模板与流水线模板
+- 搭建了基于 gitlab runner + kaniko 流水线，并为各类项目设计了多种流水线，大大提升了业务交付的流畅度。
+- 搭建了基于 ansible 的配置分发中心，通过声明式配置降低了 sshd、nginx 等配置变更的复杂度。
+- 实现了基于 gitlab-ci 的 Kubernetes 声明式管理。
 
-### [南邮镜像站](https://mirrors.njupt.edu.cn)
+### **[南邮镜像站](https://mirrors.njupt.edu.cn)**
 
-- 完成了镜像站的平滑升级。
-- 处理[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，定时更新帮助文档。
-- 向社区提交申请，将镜像站加入到[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)中。
+- 完成了镜像站的平滑升级，并对nginx配置进行了一定调优，提高了镜像站的用户体验。
+- 处理[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，定时更新帮助文档，并向社区申请将镜像站添加至相关[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)中。
+
+### **业务生命周期管理**
+
+- 接手了多个业务的运维与迭代工作，通过一系列手段解决了已有业务的单点故障等可靠性问题。
+- 参与了多个业务的启动与下线工作，通过一系列手段保证了业务生命周期中的平稳运行。
+- 参与了多个业务的设计与调研工作，结合实际情况，通过个人与业界经验为业务上线铺平了道路。
 
 ## 相关技能
 
 - 编程语言：能熟练使用编写bash与python脚本，可以使用Go与C/C++进行中间件和底层组件开发。
-- 操作系统：使用Arch Linux作为日常使用的操作系统。拥有个人维护的 [AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。了解systemd，btrfs，ebpf。
+- 操作系统：使用Arch Linux作为日常使用的操作系统。拥有个人维护的 [AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。了解systemd，ebpf。
 - 性能分析：了解性能分析的基本方法与工具，能熟练使用 sysstat 工具和部分 ebpf 工具。
 - 语言能力：良好的中英语阅读能力与文档编写能力。
 
 ## 其他技能
 
 - 了解SRE的基本观念，读过 Google 出品的相关书籍
-- 有标准化意识，读过部分标准，如 FHS、LSB、OCI
-- 有主动发现问题与独立解决问题的能力
+- 有标准化意识，读过行业相关的常见标准，如 FHS、LSB、OCI
+- 有主动发现问题的意识与独立解决问题的能力
 - 有危机意识与责任感
