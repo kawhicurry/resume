@@ -35,23 +35,20 @@ homepage:
 - 搭建了基于 kube-prometheus-stack 和 grafana-stack 的监控、日志、链路追踪平台，大大提高了对基础设施与业务的可观测性。
 - 搭建了基于 mysql-operator 的 innodb cluster，实现了 mysql 数据的高读写与高可用。
 - 搭建了基于 redis-operator 的 sentinel-redis cluster，实现了 redis 集群的高可用。
-
-### **DevOps 实践**
-
-- 搭建了基于 gitlab runner + kaniko 流水线，并为各类项目设计了多种流水线，大大提升了业务交付的流畅度。
-- 搭建了基于 ansible 的配置分发中心，通过声明式配置降低了 sshd、nginx 等配置变更的复杂度。
-- 实现了基于 gitlab-ci 的 Kubernetes 声明式管理。
+- 搭建了基于 gitlab runner + kaniko 流水线，并为各类项目设计了多种流水线，保证了业务上线与迭代的敏捷与规范。
+- 搭建了基于 gitlab-ci + ansible 的配置分发中心，通过声明式配置降低了 sshd、nginx、kubernetes 资源等配置变更的复杂度。
 
 ### **[南邮镜像站](https://mirrors.njupt.edu.cn)**
 
-- 完成了镜像站的平滑升级，并对nginx配置进行了一定调优，提高了镜像站的用户体验。
+- 完成了镜像站的一次大规模迁移与升级工作，并对nginx配置进行了一定调优，提高了镜像站的用户体验。
 - 处理[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，定时更新帮助文档，并向社区申请将镜像站添加至相关[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)中。
 
 ### **业务生命周期管理**
 
-- 接手了多个业务的运维与迭代工作，通过一系列手段解决了已有业务的单点故障等可靠性问题。
-- 参与了多个业务的启动与下线工作，通过一系列手段保证了业务生命周期中的平稳运行。
+- 接手并参与了多个业务的迭代工作，通过一系列手段解决了已有业务的单点故障等可靠性问题。
+- 参与了多个业务的启动与下线工作，通过一系列手段保证了业务在其生命周期中的平稳运行。
 - 参与了多个业务的设计与调研工作，结合实际情况，通过个人与业界经验为业务上线铺平了道路。
+- 为团队运维管理流程制定了一系列规范，并为新旧业务编写了大量维护文档。
 
 ## 相关技能
 
