@@ -15,7 +15,7 @@ homepage:
 
 ## 教育经历
 
-{% include cv-education.html %}
+### 南京邮电大学 本科 自动化系 `2020-recent`
 
 ## 工作经验
 
