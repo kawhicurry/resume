@@ -40,7 +40,7 @@ homepage:
 ### **[南邮镜像站](https://mirrors.njupt.edu.cn)**
 
 - 完成了镜像站的一次大规模迁移与升级工作，并对nginx配置进行了一定调优，提高了镜像站的用户体验。
-- 处理来自多方的[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，并及时更新相对应的帮助文档，并向社区申请将镜像站添加至相关[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)中。
+- 处理来自多方的[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，并及时更新相对应的帮助文档，并申请将镜像站添加至相关[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)。
 
 ### **业务生命周期管理**
 
@@ -58,6 +58,6 @@ homepage:
 
 ## 其他技能
 
-- 了解SRE的基本观念，读过 Google 出品的相关书籍
-- 有标准化意识，读过行业相关的常见标准，如 FHS、LSB、OCI
-- 有主动发现问题的意识与独立解决问题的能力，有危机意识与责任感
+- 了解SRE的基本观念，读过 Google 出品的相关书籍。
+- 有标准化意识，读过行业相关的常见标准，如 FHS、LSB、OCI。
+- 有主动发现问题的意识与独立解决问题的能力，有危机意识与责任感。
