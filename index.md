@@ -15,44 +15,42 @@ homepage:
 
 ## 教育经历
 
-### 南京邮电大学 本科 自动化系 `2020-recent`
+### 南京邮电大学 本科 自动化系 `2020-至今`
 
 ## 工作经验
 
-### [**南京邮电大学 - 青柚工作室 - SRE**](https://qingyou.njupt.edu.cn) `2021-recent`
+[**南京邮电大学 - 青柚工作室 - linux运维**](https://qingyou.njupt.edu.cn) `2021-至今`
 
-以SRE的身份解决了小程序开发团队运维理念缺失造成的权限管理粗放，业务部署混乱等问题。个人依据 Google SRE 理论和其他 DevOps 理论，通过不断完善团队基础设施、深度参与项目生命周期管理、依据反馈制定相关规范，带领团队拥抱云原生理念，完成了团队运维体系从零到一的建设。
+青柚工作室团队主营小程序开发业务，代表业务有南邮小程序、邮你来办、南邮镜像站等。个人作为唯一的专职运维，与其他同学一起完成了团队运维体系从零到一的建设。
 
-### [**南京邮电大学 - Apollo 机器人俱乐部 - 2D 仿真组组长**](https://github.com/Apollo2d/) `2021-2022`
+[**南京邮电大学 - Apollo机器人俱乐部 - 2D仿真组组长**](https://github.com/Apollo2d/) `2021-2022`
 
-个人作为该科研竞赛项目组长，积极与社区交流，深度参与了相关 Cpp 项目的开发，并贡献了一些开源项目。
+个人作为该科研竞赛项目组长，参与了相关Cpp项目的开发，并贡献了一些开源项目。
 
 ## 项目经历
 
-### **基础设施建设**
+### **业务维护与基础设施改造** `2022/01-2022/07`
 
-- 搭建了基于 kubeadm + ansible 的一套高可用的 kubernetes 集群。选用了 containerd、rook-ceph、cilium、traefik 等实现了集群中的相关组件。
-- 搭建了基于 kube-prometheus-stack（prom-operator、prometheus-adapter）和 grafana-stack （mimir、loki、tempo、phlare）的监控、日志、链路追踪平台，大大提高了对业务与业务链路中基础设施的可观测性。
-- 搭建了基于 gitlab runner + kaniko 的流水线，并为各类项目设计了多种流水线模板，保证了业务上线与迭代的敏捷与规范。
-- 搭建了基于 gitlab-ci + ansible 的配置分发中心，通过声明式配置降低了 sshd、nginx、grafana-agent、kubernetes CRD、helm value 等配置变更的复杂度。
-- 搭建了基于 operator 模式的 mysql innodb cluster 与 sentinel redis cluster，实现了数据库的高可用。
+接手运维工作后，发现原有运维架构存在权限管理粗放，业务部署混乱、应用配置变更困难等问题。为提高基础设施的可用性与稳定性，我采取了以下措施：
 
-### **[南邮镜像站](https://mirrors.njupt.edu.cn)**
+- 以gitlab-ci为中心，结合ansible，将业务运维操作自动化。这套系统保证了业务的CI/CD的同时，允许使用声明式配置对基础服务（如nginx、sshd）进行与配置变更，从而确保了业务迭代与配置变更的规范与敏捷。
+- 回收了所有服务器与数据库的登陆权限，并基于最小权限原则重新划分了权限，同时为服务器建立了基于CA的ssh登陆认证体系，从而保证了服务器与数据库的基本安全。
+- 部署了基于prometheus+loki+tempo的监控、日志、链路分析平台，结合grafana与alertmanager，提供了对业务与基础设施的基本观测能力与告警能力，在为业务开发与迭代的 debug 与性能优化提供了便利的同时将故障发现时间由数小时缩减到了5分钟以内。
+- 及时响应并解决了多起线上事故，通过事后复盘，整理、归纳并解决相关问题，最终将整个基础设施的故障率由每月10次以上降低到了2次以下。
 
-- 完成了镜像站的一次大规模迁移与升级工作，并对nginx配置进行了一定调优，提高了镜像站的用户体验。
-- 处理来自多方的[镜像添加请求](https://github.com/NJUPT-Mirrors-Group/issues/issues?q=is%3Aissue+is%3Aclosed)，并及时更新相对应的帮助文档，并申请将镜像站添加至相关[官方源](https://archlinux.org/mirrors/njupt.edu.cn/)。
+### **云基础设施建设** `2023/02-至今`
 
-### **业务生命周期管理**
+已有的基础设施不能满足业务增长的需求，为进一步将运维工作自动化、平台化，我们决定建设一套私有云平台，并结合公有云一同为新老业务提供运行环境。我的工作成果如下：
 
-- 接手并参与了多个业务的迭代与运维工作，通过引入观测工具、优化部署方案等手段提高了已有业务的SLA。
-- 及时响应并解决了多次线上故障，通过监控报警、保留现场、事后复盘等方式保证了故障的及时发现与高效解决。
-- 参与了多个业务的调研与设计工作，为新业务的架构设计与平稳上线提供了技术支持。
-- 为团队运维管理流程制定了一系列规范，并为新旧业务编写了设计与维护文档。
+- 基于kubeadm+ansible搭建了一套高可用的kubernetes集群，并选用了containerd、rook-ceph、cilium、traefik等实现了集群中的相关组件。
+- 搭建了基于kube-prometheus-stack与grafana-stack的可观测性平台，基于这套系统提供了对基础设施及业务项目的监控指标、日志分析、链路追踪、性能分析的全面观测能力。
+- 部署了基于operator模式的mysql innodb cluster与sentinel redis cluster，实现了数据库的高可用。
+- 结合实际需求与Google Borg论文，对业务进行了整理、分类与改造，如将定时任务转换为cronjob，将前端静态产物转为使用公有云OSS+CDN部署等。
 
 ## 相关技能
 
 - 编程语言：能熟练使用编写bash与python脚本，可以使用Go与C/C++进行中间件和底层组件开发。
-- 操作系统：使用Arch Linux作为日常使用的操作系统。拥有个人维护的 [AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。了解systemd，ebpf。
+- 操作系统：使用Arch Linux作为日常使用的操作系统。拥有个人维护的[AUR 源](https://aur.archlinux.org/packages?O=0&SeB=m&K=kawhicurry&outdated=&SB=m&SO=d&PP=50&submit=Go)。了解systemd，ebpf。
 - 性能分析：了解性能分析的基本方法与工具，能熟练使用 sysstat 工具和部分 ebpf 工具。
 - 语言能力：良好的中英语阅读能力与文档编写能力。
 
