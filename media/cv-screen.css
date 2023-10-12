@@ -151,7 +151,7 @@ p strong {
 }
 
 em {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 h1 {
